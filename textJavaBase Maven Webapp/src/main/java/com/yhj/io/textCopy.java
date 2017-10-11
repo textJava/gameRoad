@@ -15,19 +15,19 @@ public class textCopy {
 
 	public static void main(String[] args) {
 		//普通IO复制
-//		String oldUrl="E:\\JavaTools\\myeclipse\\q.exe";
-//		String newUrl="C:\\Users\\Administrator\\Desktop\\1.exe";
-//		long start=System.currentTimeMillis();
-//		String result=fileCopy(oldUrl,newUrl);
-//		long end=System.currentTimeMillis();
-//		System.out.println("复制共用时间："+(end-start)+"结果："+result);
+		String oldUrl="E:\\JavaTools\\myeclipse\\q.exe";
+		String newUrl="C:\\Users\\Administrator\\Desktop\\1.exe";
+		long start=System.currentTimeMillis();
+		String result=fileCopy(oldUrl,newUrl);
+		long end=System.currentTimeMillis();
+		System.out.println("复制共用时间："+(end-start)+"结果："+result);
 		//缓冲IO复制
-//		String bufOldUrl="E:\\JavaTools\\myeclipse\\q.exe";
-//		String bufNewUrl="C:\\Users\\Administrator\\Desktop\\2.exe";
-//		long bufStart=System.currentTimeMillis();
-//		String bufResult=bufFileCopy(bufOldUrl, bufNewUrl);
-//		long bufEnd=System.currentTimeMillis();
-//		System.out.println("缓冲IO复制共用时间："+(bufEnd-bufStart)+"结果："+bufResult);
+		String bufOldUrl="E:\\JavaTools\\myeclipse\\q.exe";
+		String bufNewUrl="C:\\Users\\Administrator\\Desktop\\2.exe";
+		long bufStart=System.currentTimeMillis();
+		String bufResult=bufFileCopy(bufOldUrl, bufNewUrl);
+		long bufEnd=System.currentTimeMillis();
+		System.out.println("缓冲IO复制共用时间："+(bufEnd-bufStart)+"结果："+bufResult);
 		//NIO复制
 		String NioOldUrl="E:\\JavaTools\\myeclipse\\q.exe";
 		String NioNewUrl="C:\\Users\\Administrator\\Desktop\\3.exe";
