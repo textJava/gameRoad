@@ -14,34 +14,34 @@ import java.nio.channels.FileChannel;
 public class textCopy {
 
 	public static void main(String[] args) {
-		//ÆÕÍ¨IO¸´ÖÆ
-		String oldUrl="E:\\Ó¢ĞÛÊ±¿Ì\\237510566\\1.avi";
+		//æ™®é€šIOå¤åˆ¶
+		String oldUrl="E:\\è‹±é›„æ—¶åˆ»\\237510566\\1.avi";
 		String newUrl="C:\\Users\\Administrator\\Desktop\\4.avi";
 		long start=System.currentTimeMillis();
 		String result=fileCopy(oldUrl,newUrl);
 		long end=System.currentTimeMillis();
-		System.out.println("¸´ÖÆ¹²ÓÃÊ±¼ä£º"+(end-start)+"½á¹û£º"+result);
-		//»º³åIO¸´ÖÆ
+		System.out.println("å¤åˆ¶å…±ç”¨æ—¶é—´ï¼š"+(end-start)+"ç»“æœï¼š"+result);
+		//ç¼“å†²IOå¤åˆ¶
 		String bufOldUrl="C:\\Users\\Administrator\\Desktop\\2.avi";
 		String bufNewUrl="C:\\Users\\Administrator\\Desktop\\5.avi";
 		long bufStart=System.currentTimeMillis();
 		String bufResult=bufFileCopy(bufOldUrl, bufNewUrl);
 		long bufEnd=System.currentTimeMillis();
-		System.out.println("»º³åIO¸´ÖÆ¹²ÓÃÊ±¼ä£º"+(bufEnd-bufStart)+"½á¹û£º"+bufResult);
-		//NIO¸´ÖÆ
+		System.out.println("ç¼“å†²IOå¤åˆ¶å…±ç”¨æ—¶é—´ï¼š"+(bufEnd-bufStart)+"ç»“æœï¼š"+bufResult);
+		//NIOå¤åˆ¶
 		String NioOldUrl="C:\\Users\\Administrator\\Desktop\\3.avi";
 		String NioNewUrl="C:\\Users\\Administrator\\Desktop\\6.avi";
 		long NioStart=System.currentTimeMillis();
 		String NioResult=newFileCopy(NioOldUrl, NioNewUrl);
 		long NioEnd=System.currentTimeMillis();
-		System.out.println("NIO¸´ÖÆ¹²ÓÃÊ±¼ä£º"+(NioEnd-NioStart)+"½á¹û£º"+NioResult);
+		System.out.println("NIOå¤åˆ¶å…±ç”¨æ—¶é—´ï¼š"+(NioEnd-NioStart)+"ç»“æœï¼š"+NioResult);
 	}
 	/**
-	 * NIO¸´ÖÆ
+	 * NIOå¤åˆ¶
 	 */
 	public static String newFileCopy(String oldUrl,String newUrl){
 		if(verifyParam(oldUrl,newUrl) == 1){
-			return "Ê§°Ü";
+			return "å¤±è´¥";
 		}
 		FileInputStream fis=null;
 		FileOutputStream fos=null;
@@ -91,14 +91,14 @@ public class textCopy {
 				}
 			}
 		}
-		return "NIO¸´ÖÆ³É¹¦£¡";
+		return "NIOå¤åˆ¶æˆåŠŸï¼";
 	}
 	/**
-	 * »º³åIO¸´ÖÆ
+	 * ç¼“å†²IOå¤åˆ¶
 	 */
 	public static String bufFileCopy(String oldUrl,String newUrl){
 		if(verifyParam(oldUrl,newUrl) == 1){
-			return "Ê§°Ü";
+			return "å¤±è´¥";
 		}
 		InputStream is=null;
 		OutputStream os=null;
@@ -132,14 +132,14 @@ public class textCopy {
 				}
 			}
 		}
-		return "»º³åIO¸´ÖÆ³É¹¦£¡";
+		return "ç¼“å†²IOå¤åˆ¶æˆåŠŸï¼";
 	}
 	/**
-	 * ÆÕÍ¨IO¸´ÖÆ 
+	 * æ™®é€šIOå¤åˆ¶ 
 	 */
 	public static String fileCopy(String oldUrl,String newUrl){
 		if(verifyParam(oldUrl,newUrl) == 1){
-			return "Ê§°Ü";
+			return "å¤±è´¥";
 		}
 		FileInputStream fis=null;
 		FileOutputStream fos=null;
@@ -169,18 +169,18 @@ public class textCopy {
 				}
 			}
 		}
-		return "ÆÕÍ¨IO¸´ÖÆ³É¹¦£¡";
+		return "æ™®é€šIOå¤åˆ¶æˆåŠŸï¼";
 	}
 	private static int verifyParam(String oldUrl,String newUrl){
 		int result=0;
 		if(oldUrl.length() == 0 || newUrl.length() == 0){
-			System.out.println("²ÎÊı´íÎó");
+			System.out.println("å‚æ•°é”™è¯¯");
 			result=1;
 			return result;
 		}
 		File file=new File(oldUrl);
 		if(file.exists() == false){
-			System.out.println("¸´ÖÆÎÄ¼ş²»´æÔÚ");
+			System.out.println("å¤åˆ¶æ–‡ä»¶ä¸å­˜åœ¨");
 			result=1;
 			return result;
 		}
