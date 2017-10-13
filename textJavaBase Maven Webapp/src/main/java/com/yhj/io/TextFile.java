@@ -8,5 +8,6 @@ public class TextFile {
 		long ss=TestDate.gets();
 		System.out.println(ss);
 		System.out.println(123);
+		System.out.println(3245);
 	}
 }
