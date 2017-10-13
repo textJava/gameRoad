@@ -10,5 +10,6 @@
   	<module>javaBase</module>
   	<module>textShiro</module>
     <module>textJavaShiro</module>
+    <module>core</module>
   </modules>
 </project>
