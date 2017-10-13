@@ -7,7 +7,6 @@
   <packaging>pom</packaging>
   <build/>
   <modules>
-  	<module>javaBase</module>
   	<module>textShiro</module>
     <module>textJavaShiro</module>
     <module>core</module>
