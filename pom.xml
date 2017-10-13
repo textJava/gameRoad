@@ -8,7 +8,7 @@
   <build/>
   <modules>
   	<module>textShiro</module>
-    <module>textJavaShiro</module>
+    <module>textJavaBase</module>
     <module>core</module>
   </modules>
 </project>
