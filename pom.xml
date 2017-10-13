@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <build/>
   <modules>
-  	 <module>textShiro/../pom.xml </module>
+  	 <module>textShiro Maven Webapp</module>
     <!-- <module>textJavaBase/../</module>
     <module>core/../</module> -->
   </modules>
